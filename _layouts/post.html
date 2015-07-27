@@ -20,10 +20,10 @@ published: true
 
         <header class="post-header">
             <h1 class="post-title">{{ page.title }}</h1>
-            <section class="post-meta">                
+            <section class="post-meta">
                 <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-                {% if page.categories.size > 0 %} 
-                    {{ page.categories | array_to_sentence_string | prepend: 'on ' }} 
+                {% if page.categories.size > 0 %}
+                    {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
                 {% endif %}
             </section>
         </header>
@@ -34,14 +34,14 @@ published: true
                     <img src="{{site.logo}}" alt="{{ site.name }}" />
                 {% else %}
                     <span class="blog-title">{{ site.name }}</span>
-                {%endif%} 
+                {%endif%}
             </a>
         </header> -->
-        
+
         <!-- <span class="post-meta">
             <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-            {% if page.categories.size > 0 %} 
-                {{ page.categories | array_to_sentence_string | prepend: 'on ' }} 
+            {% if page.categories.size > 0 %}
+                {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
             {% endif %}
         </span> -->
 
@@ -57,7 +57,7 @@ published: true
             <ul>
                 {% for post in site.posts %}
                     <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
-                {% endfor %}    
+                {% endfor %}
             </ul>
         </section>
         {% endif %}
@@ -77,21 +77,21 @@ published: true
                     <li>
                       <a href="https://twitter.com/{{site.twitter_username}}">Twitter</a>
                     </li>
-					<li>
+                    <li>
                       <a href="https://github.com/{{site.github_username}}">Github</a>
                     </li>
                   </ul>
-                </section>                
+                </section>
             {% endif %}
 
             <!-- Share links section -->
-            {% include share.html
-            
+            {% include share.html %}
+
             <!-- Disqus comments -->
             {% if page.disqus %}
                 {% include disqus.html %}
             {% endif %}
-            
+
         </footer>
 
     </article>
