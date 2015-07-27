@@ -17,4 +17,4 @@ author:         Luis Gutierrez
 prose:
   rooturl: '_posts'
   siteurl: 'http://blog.nadafancy.com'
-  media: 'img'
+  media: 'assets/images'
