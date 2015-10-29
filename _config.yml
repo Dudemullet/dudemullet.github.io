@@ -22,3 +22,6 @@ prose:
   rooturl: '_posts'
   siteurl: 'http://blog.nadafancy.com'
   media: 'assets/images'
+post:
+  template: '_templates/post.html'
+  extension: 'md'
