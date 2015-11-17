@@ -7,7 +7,7 @@ highlighter: pygments
 logo: false
 paginate: 15
 baseurl: /
-domain_name: 'http://blog.nadafancy.com'
+domain_name: 'http://nadafancy.com'
 google_analytics: 'UA-49913035-1'
 
 # Author social links
@@ -15,12 +15,12 @@ twitter_username: Dudemullet
 github_username: Dudemullet
 
 # Details for the RSS feed generator
-url:            http://blog.nadafancy.com
+url:            http://nadafancy.com
 author:         Luis Gutierrez
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://blog.nadafancy.com'
+  siteurl: 'http://nadafancy.com'
   media: 'assets/images'
 post:
   template: '_templates/post.html'
