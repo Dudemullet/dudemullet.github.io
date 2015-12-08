@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    jekyll-compose (0.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jekyll-compose
