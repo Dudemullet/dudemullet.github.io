@@ -1,9 +1,8 @@
 name: Nadafancy
-description: Venimos a aprender
+description: Nothingfancy
 meta_description: "Blog de programacion creado por Luis Felipe Gutierrez,  @Dudemullet"
 
 markdown: kramdown
-highlighter: pygments
 logo: false
 paginate: 15
 baseurl: /
@@ -25,3 +24,8 @@ prose:
 post:
   template: '_templates/post.html'
   extension: 'md'
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+gems: [jekyll-paginate]
