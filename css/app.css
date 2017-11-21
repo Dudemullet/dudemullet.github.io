@@ -1,0 +1,148 @@
+@import "normalize.css";
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.thin-font {
+  font-weight: 200;
+}
+body {
+  font-family: "Helvetica Neue", "Arial", sans-seriff;
+  color: #4d4d4d;
+  font-size: 15px;
+}
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+header {
+  color: #ffffff;
+  background-color: #4d4d4d;
+  width: 100%;
+  position: relative;
+  height: 150px;
+  font-size: 1.8em;
+}
+header .title {
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+header span {
+  font-weight: 800;
+}
+header .subtitle {
+  font-size: 0.8em;
+  display: block;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  top: 10px;
+}
+.container {
+  width: 900px;
+  max-width: 100%;
+  min-width: 900px;
+  margin: auto auto;
+  padding: 40px;
+}
+.sidebar {
+  width: 150px;
+  float: left;
+}
+.main {
+  max-width: 670px;
+  float: left;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+aside {
+  text-align: right;
+}
+section {
+  margin-bottom: 20px;
+}
+section .header {
+  margin: 0;
+}
+section ul {
+  list-style-type: none;
+}
+.sidebar .item {
+  font-weight: 200;
+}
+.main-section .name {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.main-section .thin-font {
+  text-align: justify;
+}
+.timed-block .entry {
+  margin-bottom: 10px;
+}
+.timed-block .entry .time {
+  width: 100px;
+  text-align: justify;
+  float: left;
+  font-weight: 200;
+}
+.timed-block .entry .thin-font {
+  text-align: justify;
+}
+.timed-block .entry .entry-main {
+  margin-left: 100px;
+}
+.timed-block .entry .entry-main .header {
+  margin: 0;
+  font-size: 15px;
+  line-height: 15px;
+}
+.timed-block .entry .entry-main .subject {
+  float: right;
+  font-weight: normal;
+  line-height: 15px;
+  font-size: 13px;
+  color: #aaa;
+  font-weight: 200;
+}
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+  }
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  a[data-print] {
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  a[data-print]:after {
+    content: attr(data-print);
+    display: block;
+    font-weight: 100;
+  }
+}
